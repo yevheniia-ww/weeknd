@@ -1,0 +1,104 @@
+.hero {
+    padding-top: 90px;
+    overflow: hidden;
+}
+
+.heroInner {
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.heroTop {
+    position: relative;
+    isolation: isolate;
+    min-height: 350px;
+    overflow: visible;
+}
+
+.heroCircle {
+    position: absolute;
+    right: -130px;
+    top: 155px;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: $white;
+    mix-blend-mode: difference;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.heroArtist {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 0 18px;
+
+    font-family: $font-title;
+    font-size: 160px;
+    line-height: 0.8;
+    color: $red;
+    text-transform: uppercase;
+}
+
+.heroTitle {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-family: $font-title;
+    font-size: 160px;
+    line-height: 0.8;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.heroTitleLine {
+    display: block;
+}
+
+.heroTitleLineFirst {
+    white-space: nowrap;
+}
+
+.heroBottomRow {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 36px;
+    align-items: start;
+}
+
+.heroTitleLineSecond {
+    white-space: nowrap;
+}
+
+.heroLabel {
+    width: 140px;
+    margin-top: 18px;
+
+    font-family: $font-mono;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 0.95;
+    letter-spacing: 0.5px;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.heroImageWrap {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+}
+
+.heroImage {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+}

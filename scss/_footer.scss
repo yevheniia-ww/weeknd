@@ -1,0 +1,178 @@
+.footer {
+    margin-top: 0;
+    padding: 72px 0 80px;
+
+    background-color: $red;
+    color: $white;
+}
+
+.footerInner {
+    min-height: 620px;
+}
+
+
+.footerTop {
+    margin-bottom: 48px;
+}
+
+
+.footerLabel {
+    margin: 0 0 24px;
+
+    font-family: $font-mono;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footerEmail {
+    display: inline-block;
+
+    font-family: $font-title;
+    font-size: 84px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.footerEmail:hover,
+.footerEmail:focus {
+    opacity: 0.75;
+}
+
+
+.footerLine {
+    position: relative;
+    left: calc((100vw - 100%) / -2);
+
+    width: calc(78% + ((100vw - 100%) / 2));
+    height: 1px;
+    margin-bottom: 88px;
+
+    background-color: $white;
+}
+
+.footerLine span {
+    position: absolute;
+    right: -8px;
+    top: 50%;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background-color: $white;
+    transform: translateY(-50%);
+}
+
+
+.footerNav {
+    display: grid;
+    grid-template-columns: 150px 190px 190px 1fr;
+    column-gap: 70px;
+    align-items: start;
+
+    margin-bottom: 120px;
+}
+
+.footerColumn {
+    min-width: 0;
+}
+
+.footerTitle {
+    margin: 0 0 28px;
+
+    font-family: $font-title;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.footerList,
+.footerSocialList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footerList li {
+    margin-bottom: 18px;
+}
+
+.footerList li:last-child {
+    margin-bottom: 0;
+}
+
+.footerList a {
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: $white;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.footerList a:hover,
+.footerList a:focus {
+    opacity: 0.7;
+}
+
+.footerSocial {
+    justify-self: end;
+}
+
+.footerSocialList {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footerSocialList a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.footerSocialList a:hover,
+.footerSocialList a:focus {
+    transform: translateY(-3px);
+    opacity: 0.75;
+}
+
+.footerSocialList img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+
+.footerCopyright {
+    margin: 0;
+
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: 300;
+    color: $white;
+}

@@ -1,0 +1,264 @@
+.awards {
+    margin-top: 100px;
+    overflow: visible;
+}
+
+.awards .container {
+    overflow: visible;
+}
+
+.awardsInner {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    column-gap: -80px;
+    align-items: start;
+
+    overflow: visible;
+}
+
+
+.awardsSide {
+    overflow: visible;
+}
+
+.awardsSideText {
+    position: sticky;
+    top: 40px;
+
+    margin: 0;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    font-family: $font-title;
+    font-size: 140px;
+    line-height: 0.82;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    color: transparent;
+    -webkit-text-stroke: 1px $white;
+
+    overflow: visible;
+    
+}
+
+.awardsSideText span {
+    display: inline-block;
+}
+
+.awardsSideText .dash {
+    margin: 0 24px;
+}
+
+.redOutline {
+    color: transparent;
+    -webkit-text-stroke: 1px $red;
+}
+
+
+.awardsMain {
+    position: relative;
+    overflow: visible;
+}
+
+
+.awardsHeader {
+    position: relative;
+
+    width: 620px;
+    min-height: 250px;
+    margin: 0 0 80px auto;
+
+    overflow: visible;
+}
+
+.awardsCircle {
+    position: absolute;
+    top: -120px;
+    right: -240px;
+    z-index: 1;
+
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: $red;
+}
+
+.awardsTitle {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 36px;
+
+    font-family: $font-title;
+    font-size: 160px;
+    line-height: 0.85;
+    text-transform: uppercase;
+    text-align: right;
+
+    color: $red;
+    mix-blend-mode: difference;
+}
+
+.awardsTimeline {
+    position: relative;
+
+    width: 1240px;
+    min-height: 1600px;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    overflow: visible;
+
+    --axisRight: 70px;
+    --lineShort: 120px;
+    --lineLong: 320px;
+    --lineGap: 32px;
+    --dotSize: 16px;
+}
+
+.awardsAxis {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: var(--axisRight);
+
+    width: 1px;
+    background-color: $white;
+}
+
+
+.awardItem {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 90px 520px;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: end;
+
+    width: 100%;
+    min-height: 190px;
+
+    padding-right: calc(var(--axisRight) + var(--lineShort) + var(--lineGap));
+
+    overflow: visible;
+
+    transition: padding-right 0.35s ease;
+}
+
+
+.awardItem::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: var(--axisRight);
+
+    width: var(--lineShort);
+    height: 1px;
+
+    background-color: $white;
+    transform: translateY(-50%);
+
+    transition:
+        width 0.35s ease,
+        background-color 0.35s ease;
+}
+
+.awardItem::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(var(--axisRight) - (var(--dotSize) / 2));
+
+    width: var(--dotSize);
+    height: var(--dotSize);
+    border-radius: 50%;
+
+    background-color: $white;
+    transform: translateY(-50%);
+
+    transition:
+        background-color 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+.awardItem:hover {
+    padding-right: calc(var(--axisRight) + var(--lineLong) + var(--lineGap));
+}
+
+.awardItem:hover::before {
+    width: var(--lineLong);
+    background-color: $red;
+}
+
+.awardItem:hover::after {
+    background-color: $red;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.awardItem:hover .awardName {
+    color: $red;
+}
+
+
+.awardIcon {
+    display: block;
+
+    width: 84px;
+    max-height: 125px;
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.awardContent {
+    width: 100%;
+    max-width: 520px;
+}
+
+.awardName {
+    margin: 0 0 16px;
+
+    font-family: $font-title;
+    font-size: 44px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: $white;
+
+    transition: color 0.35s ease;
+}
+
+.awardLine {
+    margin: 0 0 10px;
+
+    font-family: $font-text;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.35;
+    color: $white;
+}
+
+.awardLine:last-child {
+    margin-bottom: 0;
+}
+
+.awardYear {
+    display: inline-block;
+    margin-right: 12px;
+
+    font-family: $font-title;
+    font-size: 24px;
+    line-height: 1;
+    color: $red;
+}

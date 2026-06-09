@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "TT Trailers";
+    src: url("../fonts/TT-Trailers-Trial-ExtraBold.ttf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $black;
+    color: $white;
+    font-family: $font-text;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    margin-bottom: $section-gap;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a,
+button,
+input {
+    transition: all 0.2s ease;
+}
+
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid $red;
+    outline-offset: 4px;
+}
+
+.small-label {
+    font-family: $font-mono;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.visuallyHidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+
+    border: 0;
+}

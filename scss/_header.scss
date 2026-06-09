@@ -1,0 +1,103 @@
+.header {
+
+    z-index: 100;
+
+    width: 100%;
+    padding: 28px 0;
+
+    background-color: $dark;
+}
+
+.headerInner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: $font-mono;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logoMain {
+    color: $white;
+}
+
+.logoAccent {
+    color: $red;
+}
+
+.headerNav {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.headerLink {
+    font-family: $font-text;
+    font-size: 24px;
+    color: $white;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.headerLink:hover,
+.headerLink:focus {
+    color: $red;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.headerButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 130px;
+    height: 42px;
+    padding: 0 34px;
+
+    font-family: $font-text;
+    font-size: 16px;
+    color: $white;
+    text-decoration: none;
+
+    border: 1px solid $white;
+    border-radius: 999px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.headerButtonOutline {
+    background-color: transparent;
+    color: $white;
+}
+
+.headerButtonRed {
+    border-color: $red;
+    background-color: $red;
+    color: $white;
+}
+
+.headerButton:hover,
+.headerButton:focus {
+    background-color: $white;
+    border-color: $white;
+    color: $black;
+}
+

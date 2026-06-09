@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weeknd</title>
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Overpass+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerInner">
+            <a href="#" class="logo">
+                <span class="logoMain">MusicLegends</span>
+                <span class="logoAccent">Hub</span>
+            </a>
+    
+            <nav class="headerNav">
+                <a href="#" class="headerLink">Home</a>
+                <a href="#" class="headerLink">Artists of the week</a>
+                <a href="#" class="headerLink">About us</a>
+            </nav>
+    
+            <div class="headerActions">
+                <a href="#" class="headerButton headerButtonOutline">Sign up</a>
+                <a href="#" class="headerButton headerButtonRed">Log in</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero pageSection">
+            <div class="container">
+                <div class="heroInner">
+                    <div class="heroTop">
+                        <div class="heroCircle"></div>
+            
+                        <p class="heroArtist">The Weeknd</p>
+            
+                        <h1 class="heroTitle">
+                            <span class="heroTitleLine heroTitleLineFirst">
+                               The leading voice
+                            </span>
+            
+                            <span class="heroBottomRow">
+                                <span class="heroLabel">
+                                    Immerse yourself in the world of music that changes emotions.
+                                </span>
+            
+                                <span class="heroTitleLine heroTitleLineSecond">
+                                    Of modern music
+                                </span>
+                            </span>
+                        </h1>
+                    </div>
+            
+                    <div class="heroImageWrap">
+                        <img class="heroImage" src="images/weeknd.png" alt="The Weeknd portrait">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ticker">
+            <div class="container">
+                <div class="tickerInner">
+                    <div class="tickerLine"></div>
+        
+                    <div class="tickerTrack">
+                        <div class="tickerText">
+                            <span>St<span class="redLetter">y</span>le</span>
+                            <span>-</span>
+                            <span>Uni<span class="redLetter">q</span>ueness</span>
+                            <span>-</span>
+                            <span>Hypn<span class="redLetter">o</span>tism</span>
+                            <span>-</span>
+                            <span>St<span class="redLetter">y</span>le</span>
+                            <span>-</span>
+                            <span>Uni<span class="redLetter">q</span>ueness</span>
+                            <span>-</span>
+                            <span>Hypn<span class="redLetter">o</span>tism</span>
+                            <span>-</span>
+                        </div>
+                    </div>
+        
+                    <div class="tickerLine"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about pageSection">
+            <div class="container">
+        
+                <div class="aboutHeader">
+                    <ul class="aboutMenu">
+                        <li><a href="#">biography</a></li>
+                        <li><a href="#">albums</a></li>
+                        <li><a href="#">first success</a></li>
+                    </ul>
+        
+                    <h2 class="aboutTitle">The beginning</h2>
+                </div>
+        
+                <div class="aboutGrid">
+                    <div class="aboutLeftTop">
+                        <div class="aboutText">
+                            <p>
+                                Abel was born to Ethiopian immigrants and grew up in Scarborough,
+                                a suburb of Toronto. His childhood was not easy: he left school early
+                                and struggled with financial difficulties. Music became his escape from reality.
+                            </p>
+        
+                            <p>
+                                In 2010, Abel uploaded his first songs to YouTube under the pseudonym
+                                The Weeknd. His style - a combination of R&amp;B, pop and electronica -
+                                instantly caught the attention of listeners.
+                            </p>
+                        </div>
+        
+                        <div class="aboutYear aboutYearFirst">19</div>
+                    </div>
+        
+                    <div class="aboutImageWrap aboutImageWrapFirst">
+                        <img src="images/beginning-1.png" alt="The Weeknd on stage" class="aboutImage">
+                    </div>
+        
+                    <div class="aboutImageWrap aboutImageWrapSecond">
+                        <img src="images/beginning-2.png" alt="The Weeknd performing" class="aboutImage">
+                    </div>
+        
+                    <div class="aboutRightBottom">
+                        <div class="aboutYear aboutYearSecond">90</div>
+        
+                        <div class="aboutText aboutTextSecond">
+                            <p>
+                                Since 2015, his career has taken off with the album Beauty Behind the Madness
+                                with hits Can't Feel My Face and The Hills.
+                            </p>
+        
+                            <p>
+                                In addition to music, Abel acts in films and TV series. In 2023,
+                                he made his debut as an actor and screenwriter in the series The Idol.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+
+        <section class="discography pageSection">
+            <div class="container">
+                <div class="discographyHeader">
+                    <div class="discographyCircle"></div>
+                    <h2 class="discographyTitle">Discography</h2>
+                </div>
+        
+                <div class="discographyViewport">
+                    <div class="discographyTrack" id="discographyTrack"></div>
+                </div>
+                
+                <div class="discographyControls">
+                    <button class="discographyArrow discographyPrev" type="button" aria-label="Previous albums">←</button>
+                    <button class="discographyArrow discographyNext" type="button" aria-label="Next albums">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ticker">
+            <div class="container">
+                <div class="tickerInner">
+                    <div class="tickerLine"></div>
+        
+                    <div class="tickerTrack">
+                        <div class="tickerText">
+                            <span>St<span class="redLetter">y</span>le</span>
+                            <span>-</span>
+                            <span>Uni<span class="redLetter">q</span>ueness</span>
+                            <span>-</span>
+                            <span>Hypn<span class="redLetter">o</span>tism</span>
+                            <span>-</span>
+                            <span>St<span class="redLetter">y</span>le</span>
+                            <span>-</span>
+                            <span>Uni<span class="redLetter">q</span>ueness</span>
+                            <span>-</span>
+                            <span>Hypn<span class="redLetter">o</span>tism</span>
+                            <span>-</span>
+                        </div>
+                    </div>
+        
+                    <div class="tickerLine"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="idol pageSection">
+            <div class="container">
+                <div class="idolHeader">
+                    <h2 class="idolTitle">
+                        <span class="idolTopRow">
+                            <span class="idolTitleLine">From stage</span>
+                
+                            <span class="idolLabel">
+                                The most controversial and discussed film. The Weeknd's debut as an actor.
+                            </span>
+                        </span>
+                
+                        <span class="idolTitleLine idolTitleLineSecond">
+                            To big screens
+                        </span>
+                    </h2>
+                </div>
+                <div class="idolBody">
+                    <div class="idolBgText" aria-hidden="true">
+                        <div class="idolBgRow">
+                            <div class="idolBgTrack">
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                            </div>
+                    
+                            <div class="idolBgTrack">
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                            </div>
+                        </div>
+                    
+                        <div class="idolBgRow idolBgRowRed">
+                            <div class="idolBgTrack">
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                            </div>
+                    
+                            <div class="idolBgTrack">
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                            </div>
+                        </div>
+                    
+                        <div class="idolBgRow">
+                            <div class="idolBgTrack">
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                            </div>
+                    
+                            <div class="idolBgTrack">
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                                <span>The Idol</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="idolImageWrap">
+                        <img class="idolMainImage" src="images/idol-main.png" alt="The Idol scene">
+                    </div>
+        
+                    <div class="idolBottom">
+                        <div class="idolTextBlock">
+                            <p>
+                                The Idol is a 2023 drama series created by Abel Tesfaye (The Weeknd),
+                                Sam Levinson (Euphoria) and Reza Fahim. In the center of the plot is
+                                Jocelyn, a pop star trying to return to fame after a nervous breakdown.
+                            </p>
+        
+                            <p>
+                                The series explores the dark side of the music industry, seduction,
+                                power and fame, portraying them through bold, provocative scenes.
+                            </p>
+        
+                            <a class="idolWatchButton" href="https://www.hbomax.com/ua/uk/shows/idol/8893abd5-1a33-477b-94e4-20329e2d37ef" target="_blank" rel="noopener noreferrer">
+                                <img class="idolButtonIcon" src="images/hboLogo.svg" alt="">
+                                <span>Watch now</span>
+                            </a>
+                        </div>
+        
+                        <div class="idolAlbumBlock">
+                            <img class="idolAlbumImage" src="images/idol-album.png" alt="The Idol Vol. 1 cover">
+        
+                            <h3 class="idolAlbumTitle">The Idol, Vol. 1</h3>
+        
+                            <a class="idolSpotifyButton" href="#" target="_blank" rel="noopener noreferrer">
+                                <img class="idolButtonIcon" src="images/spotifyLogo.png" alt="">
+                                <span>Listen on Spotify</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="awards pageSection">
+            <div class="container">
+                <div class="awardsInner">
+                    <div class="awardsSide">
+                        <p class="awardsSideText">
+                            <span>St<span class="redOutline">y</span>le</span>
+                            <span class="dash">—</span>
+                            <span>Uni<span class="redOutline">q</span>ueness</span>
+                            <span class="dash">—</span>
+                            <span>Hypn<span class="redOutline">o</span>tism</span>
+                            <span class="dash">—</span>
+                            <span>We<span class="redOutline">e</span>knd</span>
+                        </p>
+                    </div>
+        
+                    <div class="awardsMain">
+                        <div class="awardsHeader">
+                            <div class="awardsCircle"></div>
+                            <h2 class="awardsTitle">Awards</h2>
+                        </div>
+        
+                        <div class="awardsTimeline">
+                            <div class="awardsAxis"></div>
+        
+                            <article class="awardItem">
+                                <img class="awardIcon" src="./images/american-awards.png" alt="American Music Awards trophy">
+        
+                                <div class="awardContent">
+                                    <h3 class="awardName">American Music Awards</h3>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2020</span>
+                                        Favorite Male Artist - Soul/R&amp;B.
+                                    </p>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2021</span>
+                                        Favorite R&amp;B Album (After Hours).
+                                    </p>
+                                </div>
+                            </article>
+        
+                            <article class="awardItem">
+                                <img class="awardIcon" src="./images/grammy.png" alt="Grammy trophy">
+        
+                                <div class="awardContent">
+                                    <h3 class="awardName">Grammy</h3>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2016</span>
+                                        Best Urban Contemporary Album for Beauty Behind the Madness.
+                                    </p>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2016</span>
+                                        Best R&amp;B Performance for Earned It.
+                                    </p>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2018</span>
+                                        Best Urban Contemporary Album for Starboy.
+                                    </p>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2022</span>
+                                        Best Melodic Rap Performance.
+                                    </p>
+                                </div>
+                            </article>
+        
+                            <article class="awardItem">
+                                <img class="awardIcon" src="./images/juno.png" alt="Juno Awards trophy">
+        
+                                <div class="awardContent">
+                                    <h3 class="awardName">Juno Awards</h3>
+        
+                                    <p class="awardLine">
+                                        <span class="awardYear">2021, 2022</span>
+                                        Artist of the Year.
+                                    </p>
+        
+                                    <p class="awardLine">
+                                        Album of the Year (After Hours, Starboy).
+                                    </p>
+                                </div>
+                            </article>
+        
+                            <article class="awardItem">
+                                <img class="awardIcon" src="./images/iheartradio.png" alt="iHeartRadio Music trophy">
+        
+                                <div class="awardContent">
+                                    <h3 class="awardName">iHeartRadio Music</h3>
+        
+                                    <p class="awardLine">
+                                        10 wins, including Song of the Year (Blinding Lights).
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe pageSection">
+            <div class="container">
+                <div class="subscribeInner">
+        
+                    <div class="subscribeHeader">
+                        <div class="subscribeTitleBlock">
+                            <h2 class="subscribeTitle">
+                                <span>Want to stay</span>
+                                <span class="subscribeTitleBottom">Up to date?</span>
+                            </h2>
+        
+                            <p class="subscribeLabel">
+                                Get more news from the world of music
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="subscribeDecor" aria-hidden="true">
+                        <span>Subscribe Subscribe</span>
+                        <span>Subscribe Subscribe</span>
+                        <span>Subscribe Subscribe</span>
+                        <span>Subscribe Subscribe</span>
+                        <span>Subscribe Subscribe</span>
+                    </div>
+        
+                    <div class="subscribeCard">
+                        <form class="subscribeForm" action="#" method="post">
+                            <h3 class="subscribeFormTitle">Subscribe</h3>
+        
+                            <p class="subscribeFormText">
+                                Enter your email to get exclusive news, updates,
+                                and releases from music world.
+                            </p>
+        
+                            <label class="subscribeField">
+                                <span class="visuallyHidden">E-mail</span>
+                                <input class="subscribeInput" type="email" name="email" placeholder="E-mail" required>
+                            </label>
+        
+                            <button class="subscribeButton" type="submit">
+                                Send
+                            </button>
+                        </form>
+        
+                        <div class="subscribeImageWrap">
+                            <img class="subscribeImage" src="images/subscribe.jpeg" alt="The Weeknd performing">
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerInner">
+                <div class="footerTop">
+                    <p class="footerLabel">Get in touch</p>
+    
+                    <a class="footerEmail" href="mailto:hello@musicleghub.agency">
+                        hello@musicleghub.agency
+                    </a>
+                </div>
+    
+                <div class="footerLine">
+                    <span></span>
+                </div>
+    
+                <div class="footerNav">
+                    <div class="footerColumn">
+                        <h3 class="footerTitle">About</h3>
+    
+                        <ul class="footerList">
+                            <li><a href="#">Homepage</a></li>
+                            <li><a href="#">Artists</a></li>
+                            <li><a href="#">Genres</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footerColumn">
+                        <h3 class="footerTitle">Resources</h3>
+    
+                        <ul class="footerList">
+                            <li><a href="#">Top Albums</a></li>
+                            <li><a href="#">New Releases</a></li>
+                            <li><a href="#">Events &amp; Tours</a></li>
+                            <li><a href="#">Music Awards</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footerColumn">
+                        <h3 class="footerTitle">Legal</h3>
+    
+                        <ul class="footerList">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Copyright Info</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footerSocial">
+                        <h3 class="footerTitle">Follow us</h3>
+    
+                        <ul class="footerSocialList">
+                            <li>
+                                <a href="#" aria-label="Facebook">
+                                    <img src="images/facebook.png" alt="">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="#" aria-label="Twitter">
+                                    <img src="images/twitter.png" alt="">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="#" aria-label="Pinterest">
+                                    <img src="images/pinterest.png" alt="">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="#" aria-label="Instagram">
+                                    <img src="images/instagram.png" alt="">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="#" aria-label="TikTok">
+                                    <img src="images/tiktok.png" alt="">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="#" aria-label="YouTube">
+                                    <img src="images/youtube.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <p class="footerCopyright">
+                    © 2026 Music Legends Hub. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/discography.js"></script>
+</body>

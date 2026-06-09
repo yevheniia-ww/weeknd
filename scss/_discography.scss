@@ -1,0 +1,436 @@
+.discography {
+    position: relative;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+
+.discographyHeader {
+    position: relative;
+    isolation: isolate;
+
+    min-height: 260px;
+    margin-top: 160px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    overflow: visible;
+}
+
+.discographyTitle {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+    padding-right: 80px;
+
+    font-family: $font-title;
+    font-size: 160px;
+    line-height: 0.85;
+    color: $red;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.discographyCircle {
+    position: absolute;
+    right: -70px;
+    top: -240px;
+
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+    background-color: $red;
+    mix-blend-mode: difference;
+
+    z-index: 3;
+    pointer-events: none;
+}
+
+
+
+.discographyViewport {
+    position: relative;
+
+    width: 100%;
+    min-height: 860px;
+
+    overflow: hidden;
+}
+
+.discographyTrack {
+    display: flex;
+    gap: 32px;
+
+    will-change: transform;
+    transition: transform 0.45s ease;
+}
+
+
+.albumSlide {
+    position: relative;
+
+    flex: 0 0 calc((100% - 64px) / 3);
+    min-width: calc((100% - 64px) / 3);
+
+    overflow: visible;
+}
+
+.albumSlide.isActive {
+    z-index: 20;
+}
+
+
+.albumCard {
+    position: relative;
+
+    min-height: 860px;
+    width: 100%;
+
+    overflow: visible;
+}
+
+.albumCard::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -32px;
+    top: 50%;
+
+    height: 1px;
+
+    background-color: $white;
+    opacity: 0.8;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.albumAxis {
+    position: absolute;
+    left: 46px;
+    top: 50%;
+
+    width: 0;
+    height: 0;
+
+    z-index: 5;
+}
+
+.albumDot {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    background-color: $white;
+
+    transform: translate(-50%, -50%);
+    z-index: 6;
+
+    transition:
+        width 0.25s ease,
+        height 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.albumSlide.isActive .albumDot {
+    width: 44px;
+    height: 44px;
+    background-color: $red;
+}
+
+.albumLineTop,
+.albumLineBottom {
+    position: absolute;
+    left: 0;
+
+    width: 1px;
+
+    background-color: $white;
+    opacity: 0.85;
+
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.albumLineTop {
+    bottom: 0;
+    height: 260px;
+}
+
+.albumLineBottom {
+    top: 0;
+    height: 260px;
+}
+
+.albumContent {
+    position: absolute;
+    left: 72px;
+
+    display: grid;
+    grid-template-columns: 44px 140px 360px;
+    column-gap: 18px;
+    align-items: start;
+
+    width: 202px;
+
+    transition:
+        width 0.35s ease,
+        column-gap 0.35s ease;
+}
+
+
+.albumCardTop .albumContent {
+    top: 75px;
+}
+
+
+.albumCardBottom .albumContent {
+    top: 485px;
+}
+
+.albumSlide.isActive .albumCardTop .albumContent {
+    top: 50px;
+}
+
+
+.albumSlide.isActive .albumCardBottom .albumContent {
+    top: 475px;
+}
+
+
+
+.albumVerticalTitle {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+    margin: 0;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg) translateY(8px);
+
+    font-family: $font-title;
+    font-size: 34px;
+    line-height: 1;
+    color: $red;
+    text-transform: uppercase;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+}
+
+.albumCover {
+    display: block;
+
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+    filter: brightness(0.9);
+
+    transition:
+        width 0.35s ease,
+        height 0.35s ease,
+        filter 0.35s ease;
+}
+
+.albumMain {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin-top: 12px;
+}
+
+.albumYear {
+    margin: 0;
+
+    font-family: $font-title;
+    font-size: 30px;
+    line-height: 1;
+    color: $white;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
+
+.albumTitle {
+    margin: 8px 0 0;
+
+    font-family: $font-title;
+    font-size: 38px;
+    line-height: 0.95;
+    color: $white;
+    text-transform: uppercase;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
+
+
+
+.albumDetails {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    max-width: 520px;
+
+    transform: translateY(-8px);
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+}
+
+.albumText {
+    margin: 0 0 16px;
+
+    font-family: $font-text;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: $white;
+}
+
+
+
+.albumSlide.isActive .albumContent {
+    width: 610px;
+}
+
+.albumSlide.isActive .albumVerticalTitle {
+    margin-left: 8px;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: rotate(180deg) translateY(0);
+}
+
+.albumSlide.isActive .albumCover {
+    width: 140px;
+    height: 140px;
+
+    filter: brightness(1);
+}
+
+.albumSlide.isActive .albumMain {
+    grid-column: 2 / 4;
+    grid-row: 2;
+
+    margin-top: 18px;
+}
+
+.albumSlide.isActive .albumYear,
+.albumSlide.isActive .albumTitle {
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.albumSlide.isActive .albumDetails {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0);
+}
+
+
+
+.spotifyButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8px;
+    padding: 12px 24px;
+
+    border-radius: 999px;
+    background-color: $red;
+
+    font-family: $font-text;
+    font-size: 14px;
+    font-weight: 300;
+    color: $white;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.spotifyButton:hover,
+.spotifyButton:focus {
+    background-color: $white;
+    color: $black;
+}
+
+.discographyControls {
+    order: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+
+.discographyArrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    font-size: 20px;
+    line-height: 1;
+    color: $white;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.discographyArrow:hover,
+.discographyArrow:focus {
+    background-color: $red;
+    border-color: $red;
+    color: $white;
+}
