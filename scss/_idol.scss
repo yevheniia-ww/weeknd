@@ -271,3 +271,30 @@
 .idolSpotifyButton:focus .idolButtonIcon {
     filter: none;
 }
+
+.idolTitleBlock {
+    width: fit-content;
+    margin-left: auto;
+  }
+  
+  .idolTitleBlock .idolTitle {
+    width: fit-content;
+    margin-left: auto;
+  }
+  
+  .idolTitleBlock .idolLabel {
+    display: block;
+    max-width: 340px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 0;
+    font-family: $font-mono;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.05;
+    color: $white;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }

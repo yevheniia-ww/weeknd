@@ -1,0 +1,1840 @@
+
+@media (max-width: 1280px) {
+    .container {
+      padding: 0 50px;
+    }
+  
+    .headerInner {
+      padding: 0 50px;
+      gap: 28px;
+    }
+  
+    .logo {
+      font-size: 24px;
+    }
+  
+    .headerMenu {
+      gap: 28px;
+    }
+  
+    .headerNav {
+      gap: 24px;
+    }
+  
+    .headerLink {
+      font-size: 18px;
+    }
+  
+    .headerButton {
+      min-width: 108px;
+      height: 38px;
+      padding: 0 24px;
+      font-size: 14px;
+    }
+  
+    .heroInner {
+      width: 900px;
+    }
+  
+    .heroArtist,
+    .heroTitle {
+      font-size: 120px;
+      line-height: 0.88;
+    }
+  
+    .heroImage {
+      height: 460px;
+    }
+  
+    .tickerText {
+      font-size: 140px;
+    }
+  
+    .aboutTitle,
+    .discographyTitle,
+    .idolTitle,
+    .awardsTitle {
+      font-size: 120px;
+    }
+  
+    .aboutYear {
+      font-size: 360px;
+    }
+  
+    .aboutImage,
+    .aboutLeftTop,
+    .aboutRightBottom {
+      height: 660px;
+    }
+  
+    .aboutText {
+      font-size: 22px;
+    }
+  
+    .discographyHeader {
+      margin-top: 120px;
+    }
+  
+    .discographyViewport {
+      min-height: 760px;
+    }
+  
+    .albumCard {
+      min-height: 760px;
+    }
+  
+    .albumContent {
+      left: 56px;
+      grid-template-columns: 36px 120px 300px;
+    }
+  
+    .albumSlide.isActive .albumContent {
+      width: 520px;
+    }
+  
+    .albumText {
+      font-size: 14px;
+    }
+  
+    .idolImageWrap,
+    .idolBottom {
+      width: 100%;
+    }
+  
+    .awardsTimeline {
+      width: 100%;
+    }
+  
+    .footerEmail {
+      font-size: 70px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 40px;
+      margin-bottom: 70px;
+    }
+  
+    .hero {
+      padding-top: 70px;
+    }
+  
+    .heroInner {
+      width: 100%;
+    }
+  
+    .heroTop {
+      min-height: auto;
+    }
+  
+    .heroArtist,
+    .heroTitle {
+      font-size: 84px;
+      line-height: 0.9;
+    }
+  
+    .heroTitleLineFirst,
+    .heroTitleLineSecond {
+      white-space: normal;
+    }
+  
+    .heroBottomRow {
+      grid-template-columns: 120px minmax(0, 1fr);
+      column-gap: 26px;
+    }
+  
+    .heroLabel {
+      width: 115px;
+      font-size: 14px;
+      line-height: 1.1;
+    }
+  
+    .heroCircle {
+      width: 300px;
+      height: 300px;
+      right: -150px;
+      top: 110px;
+    }
+  
+    .heroImage {
+      height: 380px;
+    }
+  
+    .ticker {
+      padding: 45px 0;
+      margin-bottom: 70px;
+    }
+  
+    .tickerText {
+      font-size: 100px;
+      gap: 26px;
+      letter-spacing: 6px;
+    }
+  
+    .aboutHeader {
+      grid-template-columns: 1fr;
+      row-gap: 28px;
+      margin-bottom: 44px;
+    }
+  
+    .aboutMenu {
+      font-size: 20px;
+    }
+  
+    .aboutTitle {
+      justify-self: start;
+      text-align: left;
+      font-size: 88px;
+      line-height: 0.9;
+      white-space: normal;
+    }
+  
+    .aboutGrid {
+      grid-template-columns: 1fr;
+      row-gap: 36px;
+    }
+  
+    .aboutLeftTop,
+    .aboutRightBottom,
+    .aboutImageWrapFirst,
+    .aboutImageWrapSecond {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  
+    .aboutLeftTop,
+    .aboutRightBottom {
+      height: auto;
+      gap: 28px;
+    }
+  
+    .aboutText {
+      max-width: 720px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  
+    .aboutText p {
+      margin-bottom: 20px;
+    }
+  
+    .aboutYear {
+      font-size: 180px;
+      line-height: 0.8;
+      letter-spacing: 8px;
+    }
+  
+    .aboutImage {
+      height: 520px;
+    }
+  
+    .discographyHeader {
+      min-height: 160px;
+      margin-top: 80px;
+      justify-content: flex-start;
+    }
+  
+    .discographyTitle {
+      padding-right: 0;
+      font-size: 88px;
+      line-height: 0.9;
+    }
+  
+    .discographyCircle {
+      width: 320px;
+      height: 320px;
+      right: -170px;
+      top: -120px;
+    }
+  
+    .discographyViewport {
+      min-height: 760px;
+    }
+  
+    .discographyTrack {
+      gap: 28px;
+    }
+  
+    .albumSlide {
+      flex: 0 0 85%;
+      min-width: 85%;
+    }
+  
+    .albumCard {
+      min-height: 760px;
+    }
+  
+    .albumContent {
+      left: 44px;
+      grid-template-columns: 28px 110px minmax(0, 1fr);
+      column-gap: 14px;
+    }
+  
+    .albumSlide.isActive .albumContent {
+      width: calc(100% - 60px);
+    }
+  
+    .albumCover {
+      width: 105px;
+      height: 105px;
+    }
+  
+    .albumSlide.isActive .albumCover {
+      width: 115px;
+      height: 115px;
+    }
+  
+    .albumVerticalTitle {
+      font-size: 24px;
+    }
+  
+    .albumTitle {
+      font-size: 30px;
+    }
+  
+    .albumText {
+      font-size: 14px;
+      line-height: 1.35;
+    }
+  
+    .idolHeader {
+      margin-bottom: 44px;
+    }
+  
+    .idolTitle {
+      width: 100%;
+      margin-left: 0;
+      font-size: 88px;
+      line-height: 0.9;
+    }
+  
+    .idolTopRow {
+      gap: 36px;
+    }
+  
+    .idolTitleLineSecond {
+      margin-left: 0;
+    }
+  
+    .idolLabel {
+      max-width: 260px;
+      font-size: 14px;
+    }
+  
+    .idolImageWrap {
+      width: 100%;
+    }
+  
+    .idolMainImage {
+      height: 400px;
+    }
+  
+    .idolBottom {
+      width: 100%;
+      grid-template-columns: 1fr;
+      row-gap: 28px;
+    }
+  
+    .idolTextBlock {
+      width: 100%;
+      max-width: 760px;
+    }
+  
+    .idolTextBlock p {
+      font-size: 17px;
+      line-height: 1.45;
+    }
+  
+    .idolAlbumBlock {
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    .idolAlbumImage {
+      width: 220px;
+      height: 170px;
+    }
+  
+    .idolWatchButton,
+    .idolSpotifyButton {
+      min-width: 180px;
+    }
+  
+    .awards {
+      margin-top: 70px;
+    }
+  
+    .awardsInner {
+      grid-template-columns: 1fr;
+    }
+  
+    .awardsSide {
+      display: none;
+    }
+  
+    .awardsHeader {
+      width: 100%;
+      min-height: 170px;
+      margin: 0 0 40px;
+    }
+  
+    .awardsTitle {
+      padding-right: 0;
+      font-size: 88px;
+      text-align: left;
+    }
+  
+    .awardsCircle {
+      width: 280px;
+      height: 280px;
+      right: -120px;
+      top: -80px;
+    }
+  
+    .awardsTimeline {
+      width: 100%;
+      min-height: auto;
+      gap: 48px;
+  
+      --axisRight: 18px;
+      --lineShort: 52px;
+      --lineLong: 80px;
+      --lineGap: 16px;
+      --dotSize: 12px;
+    }
+  
+    .awardItem {
+      grid-template-columns: 70px minmax(0, 1fr);
+      column-gap: 20px;
+      min-height: auto;
+    }
+  
+    .subscribeHeader {
+      min-height: auto;
+      margin-bottom: 32px;
+    }
+  
+    .subscribeTitleBlock {
+      width: 100%;
+    }
+  
+    .subscribeTitle {
+      font-size: 72px;
+      line-height: 0.95;
+    }
+  
+    .subscribeTitleBottom {
+      margin-left: 0;
+    }
+  
+    .subscribeLabel {
+      position: static;
+      width: 100%;
+      max-width: 240px;
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 1.1;
+    }
+  
+    .subscribeDecor {
+      display: none;
+    }
+  
+    .subscribeCard {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+  
+    .subscribeForm {
+      padding: 56px 40px;
+    }
+  
+    .subscribeImageWrap {
+      min-height: 320px;
+    }
+  
+    .footerNav {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+  
+    .footerSocial {
+      justify-self: start;
+    }
+  }
+  
+
+  
+  @media (max-width: 980px) {
+    .header {
+      padding: 20px 0;
+    }
+  
+    .headerInner {
+      padding: 0 24px;
+    }
+  
+    .burgerButton {
+      display: block;
+      position: relative;
+      z-index: 20;
+      flex-shrink: 0;
+    }
+  
+    .headerMenu {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      top: calc(100% + 18px);
+      z-index: 15;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+  
+      padding: 28px;
+  
+      border: 1px solid rgba(245, 245, 245, 0.15);
+      border-radius: 24px;
+      background-color: $dark;
+  
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-12px);
+  
+      transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+    }
+  
+    .headerMenu.isOpen {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  
+    .headerNav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+    }
+  
+    .headerLink {
+      font-size: 22px;
+    }
+  
+    .headerActions {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .headerButton {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 24px;
+      margin-bottom: 56px;
+    }
+  
+    .hero {
+      padding-top: 48px;
+    }
+  
+    .heroArtist,
+    .heroTitle {
+      font-size: 58px;
+      line-height: 0.9;
+    }
+  
+    .heroBottomRow {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+  
+    .heroLabel {
+      order: 2;
+      width: 100%;
+      max-width: 210px;
+      margin-top: 0;
+      font-size: 13px;
+      line-height: 1.1;
+    }
+  
+    .heroCircle {
+      width: 210px;
+      height: 210px;
+      right: -100px;
+      top: 90px;
+    }
+  
+    .heroImage {
+      height: 300px;
+    }
+  
+    .ticker {
+      padding: 35px 0;
+      margin-bottom: 56px;
+    }
+  
+    .tickerLine {
+      width: 100%;
+    }
+  
+    .tickerText {
+      font-size: 68px;
+      gap: 20px;
+      letter-spacing: 4px;
+      -webkit-text-stroke-width: 1px;
+    }
+  
+    .redLetter {
+      -webkit-text-stroke-width: 1px;
+    }
+  
+    .aboutHeader {
+      row-gap: 24px;
+      margin-bottom: 32px;
+    }
+  
+    .aboutTitle,
+    .discographyTitle,
+    .idolTitle,
+    .awardsTitle {
+      font-size: 58px;
+      line-height: 0.95;
+    }
+  
+    .aboutMenu {
+      font-size: 15px;
+      gap: 6px;
+    }
+  
+    .aboutGrid {
+      grid-template-columns: 120px minmax(0, 1fr);
+      column-gap: 16px;
+      row-gap: 24px;
+      align-items: start;
+    }
+  
+    .aboutLeftTop,
+    .aboutRightBottom {
+      display: contents;
+    }
+  
+    .aboutLeftTop .aboutText {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  
+    .aboutYearFirst {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: end;
+      font-size: 110px;
+      line-height: 0.8;
+      letter-spacing: 2px;
+    }
+  
+    .aboutImageWrapFirst {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: end;
+      width: 100%;
+      max-width: 210px;
+    }
+  
+    .aboutImageWrapFirst .aboutImage {
+      height: 220px;
+      object-fit: cover;
+    }
+  
+    .aboutYearSecond {
+      grid-column: 1;
+      grid-row: 3;
+      align-self: end;
+      font-size: 110px;
+      line-height: 0.8;
+      letter-spacing: 2px;
+    }
+  
+    .aboutImageWrapSecond {
+      grid-column: 2;
+      grid-row: 3;
+      justify-self: end;
+      width: 100%;
+      max-width: 210px;
+    }
+  
+    .aboutImageWrapSecond .aboutImage {
+      height: 220px;
+      object-fit: cover;
+    }
+  
+    .aboutTextSecond {
+      grid-column: 1 / -1;
+      grid-row: 4;
+      max-width: 100%;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .discographyHeader {
+      min-height: 120px;
+      margin-top: 50px;
+    }
+  
+    .discographyCircle {
+      width: 220px;
+      height: 220px;
+      right: -120px;
+      top: -70px;
+    }
+  
+    .discographyViewport {
+      min-height: 520px;
+      padding-top: 24px;
+      overflow: hidden;
+    }
+  
+    .discographyTrack {
+      gap: 24px;
+    }
+  
+    .albumSlide {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+  
+    .albumCard {
+      min-height: 480px;
+      padding-top: 0;
+    }
+  
+    .albumCard::after {
+      top: 300px;
+    }
+  
+    .albumAxis {
+      left: 24px;
+      top: 300px;
+    }
+  
+    .albumLineTop,
+    .albumLineBottom {
+      display: none;
+    }
+  
+    .albumDot {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .albumSlide.isActive .albumDot {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .albumContent,
+    .albumCardTop .albumContent,
+    .albumCardBottom .albumContent,
+    .albumSlide.isActive .albumCardTop .albumContent,
+    .albumSlide.isActive .albumCardBottom .albumContent {
+      top: 26px;
+      left: 62px;
+      width: calc(100% - 86px);
+      display: grid;
+      grid-template-columns: 110px minmax(0, 1fr);
+      column-gap: 18px;
+      row-gap: 12px;
+      align-items: start;
+    }
+  
+    .albumSlide.isActive .albumContent {
+      width: calc(100% - 86px);
+    }
+  
+    .albumVerticalTitle {
+      display: none;
+    }
+  
+    .albumCover,
+    .albumSlide.isActive .albumCover {
+      width: 110px;
+      height: 110px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .albumMain,
+    .albumSlide.isActive .albumMain {
+      grid-column: 2;
+      grid-row: 1;
+      margin-top: 0;
+    }
+  
+    .albumYear,
+    .albumTitle {
+      position: static !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  
+    .albumYear {
+      font-size: 22px;
+    }
+  
+    .albumTitle {
+      margin-top: 6px;
+      font-size: 26px;
+    }
+  
+    .albumDetails {
+      display: block;
+      grid-column: 1 / -1;
+      max-width: 100%;
+      margin-top: 10px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: none;
+    }
+  
+    .albumText {
+      font-size: 13px;
+      line-height: 1.45;
+    }
+  
+    .spotifyButton {
+      margin-top: 12px;
+      padding: 10px 16px;
+      font-size: 13px;
+    }
+  
+    .discographyControls {
+      margin-top: 24px;
+    }
+
+    .idolHeader {
+      margin-bottom: 28px;
+    }
+  
+    .idolTitle {
+      width: 100%;
+      margin-left: 0;
+      font-size: 58px;
+      line-height: 0.95;
+    }
+  
+    .idolTopRow {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .idolLabel {
+      order: 3;
+      display: block;
+      max-width: 100%;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 13px;
+      line-height: 1.15;
+      text-align: left;
+    }
+  
+    .idolTitleLineSecond {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .idolBgText {
+      display: none;
+    }
+  
+    .idolImageWrap {
+      width: 100%;
+    }
+  
+    .idolMainImage {
+      height: 280px;
+    }
+  
+    .idolBottom {
+      width: 100%;
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+    }
+  
+    .idolTextBlock p {
+      margin-bottom: 22px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  
+    .idolAlbumBlock {
+      width: 100%;
+    }
+  
+    .idolAlbumImage {
+      width: 160px;
+      height: 120px;
+    }
+  
+    .idolAlbumTitle {
+      margin: 16px 0 20px;
+      font-size: 34px;
+    }
+  
+    .idolWatchButton,
+    .idolSpotifyButton {
+      width: 100%;
+      max-width: 220px;
+      min-width: 0;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 18px;
+    }
+  
+    .awards {
+      margin-top: 40px;
+    }
+  
+    .awardsHeader {
+      min-height: 120px;
+      margin-bottom: 28px;
+    }
+  
+    .awardsCircle {
+      width: 220px;
+      height: 220px;
+      right: -110px;
+      top: -60px;
+    }
+  
+    .awardsTimeline {
+      gap: 34px;
+  
+      --axisRight: 0px;
+      --lineShort: 24px;
+      --lineLong: 34px;
+      --lineGap: 12px;
+      --dotSize: 10px;
+    }
+  
+    .awardItem {
+      grid-template-columns: 44px minmax(0, 1fr);
+      column-gap: 14px;
+      min-height: auto;
+      padding-right: 34px;
+    }
+  
+    .awardItem:hover {
+      padding-right: 42px;
+    }
+  
+    .awardIcon {
+      width: 40px;
+      max-height: 60px;
+    }
+  
+    .awardName {
+      margin-bottom: 10px;
+      font-size: 26px;
+      line-height: 1;
+    }
+  
+    .awardLine {
+      margin-bottom: 8px;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+  
+    .awardYear {
+      margin-right: 8px;
+      font-size: 17px;
+    }
+  
+    .subscribeHeader {
+      min-height: auto;
+      margin-bottom: 24px;
+    }
+  
+    .subscribeTitle {
+      font-size: 50px;
+      line-height: 0.95;
+    }
+  
+    .subscribeLabel {
+      max-width: 180px;
+      font-size: 13px;
+    }
+  
+    .subscribeCard {
+      grid-template-columns: 1fr;
+      overflow: hidden;
+    }
+  
+    .subscribeForm {
+      align-items: flex-start;
+      padding: 34px 20px;
+      text-align: left;
+    }
+  
+    .subscribeFormTitle {
+      margin-bottom: 18px;
+      font-size: 46px;
+    }
+  
+    .subscribeFormText {
+      max-width: 100%;
+      margin: 0 0 28px;
+      font-size: 14px;
+      line-height: 1.45;
+      text-align: left;
+    }
+  
+    .subscribeField {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 28px;
+    }
+  
+    .subscribeInput {
+      font-size: 14px;
+    }
+  
+    .subscribeButton {
+      min-width: 150px;
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    .subscribeImageWrap {
+      min-height: 220px;
+    }
+  
+    .subscribeImage {
+      object-position: center top;
+    }
+  
+    .footer {
+      padding: 56px 0;
+    }
+  
+    .footerInner {
+      min-height: auto;
+    }
+  
+    .footerEmail {
+      font-size: 44px;
+      word-break: break-word;
+    }
+  
+    .footerLine {
+      left: 0;
+      width: 100%;
+      margin-bottom: 56px;
+    }
+  
+    .footerNav {
+      grid-template-columns: 1fr 1fr;
+      gap: 42px 32px;
+      margin-bottom: 70px;
+    }
+  
+    .footerCopyright {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 16px;
+      margin-bottom: 44px;
+    }
+  
+    .headerInner {
+      padding: 0 16px;
+    }
+  
+    .headerMenu {
+      left: 16px;
+      right: 16px;
+      padding: 24px;
+    }
+  
+    .logo {
+      font-size: 18px;
+    }
+  
+    .heroArtist,
+    .heroTitle {
+      font-size: 42px;
+      line-height: 0.92;
+    }
+  
+    .heroLabel {
+      max-width: 180px;
+      font-size: 11px;
+    }
+  
+    .heroCircle {
+      width: 180px;
+      height: 180px;
+      right: -110px;
+      top: 70px;
+    }
+  
+    .heroImage {
+      height: 240px;
+    }
+  
+    .tickerText {
+      font-size: 46px;
+      gap: 16px;
+      letter-spacing: 3px;
+    }
+  
+    .aboutTitle,
+    .discographyTitle,
+    .idolTitle,
+    .awardsTitle,
+    .subscribeTitle {
+      font-size: 44px;
+    }
+  
+    .aboutMenu {
+      font-size: 14px;
+    }
+  
+    .aboutGrid {
+      grid-template-columns: 95px minmax(0, 1fr);
+      column-gap: 12px;
+      row-gap: 20px;
+    }
+  
+    .aboutLeftTop .aboutText {
+      font-size: 15px;
+    }
+  
+    .aboutYearFirst,
+    .aboutYearSecond {
+      font-size: 84px;
+    }
+  
+    .aboutImageWrapFirst,
+    .aboutImageWrapSecond {
+      max-width: 170px;
+    }
+  
+    .aboutImageWrapFirst .aboutImage,
+    .aboutImageWrapSecond .aboutImage {
+      height: 180px;
+    }
+  
+    .discographyHeader {
+      margin-top: 44px;
+    }
+  
+    .discographyViewport {
+      min-height: 560px;
+      padding-top: 16px;
+    }
+  
+    .albumCard {
+      min-height: 520px;
+    }
+  
+    .albumCard::after {
+      top: 305px;
+    }
+  
+    .albumAxis {
+      left: 20px;
+      top: 305px;
+    }
+  
+    .albumContent,
+    .albumCardTop .albumContent,
+    .albumCardBottom .albumContent,
+    .albumSlide.isActive .albumCardTop .albumContent,
+    .albumSlide.isActive .albumCardBottom .albumContent {
+      top: 18px;
+      left: 48px;
+      width: calc(100% - 60px);
+      grid-template-columns: 92px minmax(0, 1fr);
+      column-gap: 12px;
+    }
+  
+    .albumSlide.isActive .albumContent {
+      width: calc(100% - 60px);
+    }
+  
+    .albumCover,
+    .albumSlide.isActive .albumCover {
+      width: 92px;
+      height: 92px;
+    }
+  
+    .albumTitle {
+      font-size: 24px;
+    }
+  
+    .albumYear {
+      font-size: 20px;
+    }
+  
+    .albumText {
+      font-size: 12px;
+    }
+  
+    .idolMainImage {
+      height: 240px;
+    }
+  
+    .idolTextBlock p {
+      font-size: 15px;
+    }
+  
+    .idolWatchButton,
+    .idolSpotifyButton {
+      max-width: 100%;
+    }
+  
+    .awardsTimeline {
+      gap: 36px;
+  
+      --axisRight: 0px;
+      --lineShort: 20px;
+      --lineLong: 28px;
+      --lineGap: 10px;
+    }
+  
+    .awardItem {
+      grid-template-columns: 42px minmax(0, 1fr);
+      column-gap: 12px;
+      padding-right: 28px;
+    }
+  
+    .awardItem:hover {
+      padding-right: 36px;
+    }
+  
+    .awardIcon {
+      width: 38px;
+      max-height: 56px;
+    }
+  
+    .awardName {
+      font-size: 24px;
+    }
+  
+    .awardLine {
+      font-size: 12px;
+    }
+  
+    .subscribeForm {
+      padding: 28px 16px;
+    }
+  
+    .subscribeFormTitle {
+      font-size: 40px;
+    }
+  
+    .subscribeFormText {
+      font-size: 14px;
+    }
+  
+    .subscribeImageWrap {
+      min-height: 180px;
+    }
+  
+    .footerEmail {
+      font-size: 34px;
+    }
+  
+    .footerNav {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+  
+    .footerLabel {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .idolTitleBlock {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .idolTitleBlock .idolLabel {
+      max-width: 100%;
+      margin-top: 12px;
+      margin-left: 0;
+      padding-top: 0;
+      font-size: 13px;
+      line-height: 1.15;
+      text-align: left;
+    }
+  
+    .idolTitle {
+      width: 100%;
+      margin-left: 0;
+      font-size: 58px;
+      line-height: 0.95;
+    }
+  
+    .idolTitleLineSecond {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .idolTitle {
+      font-size: 44px;
+    }
+  
+    .idolTitleBlock .idolLabel {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .discographyViewport {
+      min-height: 560px;
+      padding-top: 0;
+    }
+  
+    .albumCard {
+      min-height: 520px;
+    }
+  
+    .albumCard::after {
+      top: 340px;
+    }
+  
+    .albumAxis {
+      top: 340px;
+    }
+  
+    .albumContent,
+    .albumCardTop .albumContent,
+    .albumCardBottom .albumContent,
+    .albumSlide.isActive .albumCardTop .albumContent,
+    .albumSlide.isActive .albumCardBottom .albumContent {
+      top: 0;
+    }
+  
+    .spotifyButton {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .discographyViewport {
+      min-height: 560px;
+    }
+  
+    .albumCard {
+      min-height: 520px;
+    }
+  
+    .albumCard::after {
+      top: 350px;
+    }
+  
+    .albumAxis {
+      top: 350px;
+    }
+  
+    .albumContent,
+    .albumCardTop .albumContent,
+    .albumCardBottom .albumContent,
+    .albumSlide.isActive .albumCardTop .albumContent,
+    .albumSlide.isActive .albumCardBottom .albumContent {
+      top: 0;
+    }
+  }
+
+
+
+
+@media (max-width: 1280px) {
+
+  .aboutGrid {
+    grid-template-columns: 170px minmax(0, 1fr);
+    column-gap: 28px;
+    row-gap: 36px;
+    align-items: start;
+  }
+
+  .aboutLeftTop,
+  .aboutRightBottom {
+    display: contents;
+  }
+
+  .aboutLeftTop .aboutText {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .aboutYearFirst {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    font-size: 170px;
+    line-height: 0.8;
+    letter-spacing: 4px;
+  }
+
+  .aboutImageWrapFirst {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .aboutImageWrapFirst .aboutImage {
+    height: 360px;
+    object-fit: cover;
+  }
+
+  .aboutYearSecond {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+    font-size: 170px;
+    line-height: 0.8;
+    letter-spacing: 4px;
+  }
+
+  .aboutImageWrapSecond {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .aboutImageWrapSecond .aboutImage {
+    height: 360px;
+    object-fit: cover;
+  }
+
+  .aboutTextSecond {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .discographyViewport {
+    min-height: 620px;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+
+  .discographyTrack {
+    gap: 28px;
+  }
+
+  .albumSlide {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .albumCard {
+    min-height: 560px;
+  }
+
+  .albumCard::after {
+    top: 390px;
+  }
+
+  .albumAxis {
+    left: 42px;
+    top: 390px;
+  }
+
+  .albumLineTop,
+  .albumLineBottom {
+    display: none;
+  }
+
+  .albumDot {
+    width: 28px;
+    height: 28px;
+  }
+
+  .albumSlide.isActive .albumDot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .albumContent,
+  .albumCardTop .albumContent,
+  .albumCardBottom .albumContent,
+  .albumSlide.isActive .albumCardTop .albumContent,
+  .albumSlide.isActive .albumCardBottom .albumContent {
+    top: 28px;
+    left: 86px;
+    width: calc(100% - 120px);
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    column-gap: 24px;
+    row-gap: 14px;
+    align-items: start;
+  }
+
+  .albumSlide.isActive .albumContent {
+    width: calc(100% - 120px);
+  }
+
+  .albumVerticalTitle {
+    display: none;
+  }
+
+  .albumCover,
+  .albumSlide.isActive .albumCover {
+    width: 150px;
+    height: 150px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .albumMain,
+  .albumSlide.isActive .albumMain {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+  }
+
+  .albumYear,
+  .albumTitle {
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .albumYear {
+    font-size: 28px;
+  }
+
+  .albumTitle {
+    margin-top: 6px;
+    font-size: 34px;
+  }
+
+  .albumDetails {
+    display: block;
+    grid-column: 2;
+    max-width: 560px;
+    margin-top: 12px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  .albumText {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .spotifyButton {
+    margin-top: 12px;
+  }
+
+  .discographyControls {
+    margin-top: 20px;
+  }
+
+
+  .idolTitleBlock {
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .idolTitleBlock .idolTitle {
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .idolTitleBlock .idolLabel {
+    display: block;
+    max-width: 340px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 0;
+    text-align: right;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutGrid {
+    grid-template-columns: 140px minmax(0, 1fr);
+    column-gap: 22px;
+    row-gap: 30px;
+  }
+
+  .aboutYearFirst,
+  .aboutYearSecond {
+    font-size: 140px;
+  }
+
+  .aboutImageWrapFirst,
+  .aboutImageWrapSecond {
+    max-width: 420px;
+  }
+
+  .aboutImageWrapFirst .aboutImage,
+  .aboutImageWrapSecond .aboutImage {
+    height: 300px;
+  }
+
+  .aboutLeftTop .aboutText,
+  .aboutTextSecond {
+    font-size: 18px;
+  }
+
+  .discographyViewport {
+    min-height: 570px;
+  }
+
+  .albumCard {
+    min-height: 520px;
+  }
+
+  .albumCard::after {
+    top: 360px;
+  }
+
+  .albumAxis {
+    top: 360px;
+  }
+
+  .albumContent,
+  .albumCardTop .albumContent,
+  .albumCardBottom .albumContent,
+  .albumSlide.isActive .albumCardTop .albumContent,
+  .albumSlide.isActive .albumCardBottom .albumContent {
+    top: 20px;
+    left: 70px;
+    width: calc(100% - 96px);
+    grid-template-columns: 130px minmax(0, 1fr);
+    column-gap: 20px;
+  }
+
+  .albumSlide.isActive .albumContent {
+    width: calc(100% - 96px);
+  }
+
+  .albumCover,
+  .albumSlide.isActive .albumCover {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 120px minmax(0, 1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+  }
+
+  .aboutYearFirst,
+  .aboutYearSecond {
+    font-size: 110px;
+  }
+
+  .aboutImageWrapFirst,
+  .aboutImageWrapSecond {
+    max-width: 210px;
+  }
+
+  .aboutImageWrapFirst .aboutImage,
+  .aboutImageWrapSecond .aboutImage {
+    height: 220px;
+  }
+
+  .aboutLeftTop .aboutText {
+    font-size: 16px;
+  }
+
+  .aboutTextSecond {
+    font-size: 15px;
+  }
+
+  .discographyViewport {
+    min-height: 560px;
+  }
+
+  .albumCard {
+    min-height: 520px;
+  }
+
+  .albumCard::after {
+    top: 350px;
+  }
+
+  .albumAxis {
+    left: 24px;
+    top: 350px;
+  }
+
+  .albumContent,
+  .albumCardTop .albumContent,
+  .albumCardBottom .albumContent,
+  .albumSlide.isActive .albumCardTop .albumContent,
+  .albumSlide.isActive .albumCardBottom .albumContent {
+    top: 10px;
+    left: 58px;
+    width: calc(100% - 78px);
+    grid-template-columns: 110px minmax(0, 1fr);
+    column-gap: 16px;
+  }
+
+  .albumSlide.isActive .albumContent {
+    width: calc(100% - 78px);
+  }
+
+  .albumCover,
+  .albumSlide.isActive .albumCover {
+    width: 110px;
+    height: 110px;
+  }
+
+  .albumTitle {
+    font-size: 26px;
+  }
+
+  .albumYear {
+    font-size: 22px;
+  }
+
+  .albumText {
+    font-size: 13px;
+  }
+
+  .idolTitleBlock {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .idolTitleBlock .idolTitle {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .idolTitleBlock .idolLabel {
+    max-width: 100%;
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    font-size: 13px;
+    line-height: 1.15;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutGrid {
+    grid-template-columns: 95px minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 20px;
+  }
+
+  .aboutYearFirst,
+  .aboutYearSecond {
+    font-size: 84px;
+  }
+
+  .aboutImageWrapFirst,
+  .aboutImageWrapSecond {
+    max-width: 170px;
+  }
+
+  .aboutImageWrapFirst .aboutImage,
+  .aboutImageWrapSecond .aboutImage {
+    height: 180px;
+  }
+
+  .discographyViewport {
+    min-height: 560px;
+  }
+
+  .albumCard {
+    min-height: 520px;
+  }
+
+  .albumCard::after {
+    top: 360px;
+  }
+
+  .albumAxis {
+    left: 20px;
+    top: 360px;
+  }
+
+  .albumContent,
+  .albumCardTop .albumContent,
+  .albumCardBottom .albumContent,
+  .albumSlide.isActive .albumCardTop .albumContent,
+  .albumSlide.isActive .albumCardBottom .albumContent {
+    top: 8px;
+    left: 48px;
+    width: calc(100% - 60px);
+    grid-template-columns: 92px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .albumSlide.isActive .albumContent {
+    width: calc(100% - 60px);
+  }
+
+  .albumCover,
+  .albumSlide.isActive .albumCover {
+    width: 92px;
+    height: 92px;
+  }
+
+  .albumTitle {
+    font-size: 24px;
+  }
+
+  .albumYear {
+    font-size: 20px;
+  }
+
+  .albumText {
+    font-size: 12px;
+  }
+}

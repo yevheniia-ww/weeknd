@@ -12,26 +12,36 @@
 <body>
     <header class="header">
         <div class="headerInner">
-            <a href="#" class="logo">
-                <span class="logoMain">MusicLegends</span>
-                <span class="logoAccent">Hub</span>
-            </a>
-    
-            <nav class="headerNav">
-                <a href="#" class="headerLink">Home</a>
-                <a href="#" class="headerLink">Artists of the week</a>
-                <a href="#" class="headerLink">About us</a>
+          <a href="#home" class="logo js-scroll-link">
+            <span class="logoMain">MusicLegends</span>
+            <span class="logoAccent">Hub</span>
+          </a>
+      
+          <button class="burgerButton" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+      
+          <div class="headerMenu">
+            <nav class="headerNav" aria-label="Main navigation">
+              <a href="#home" class="headerLink js-scroll-link">Home</a>
+              <a href="#about" class="headerLink js-scroll-link">Beginning</a>
+              <a href="#discography" class="headerLink js-scroll-link">Discography</a>
+              <a href="#idol" class="headerLink js-scroll-link">The Idol</a>
+              <a href="#awards" class="headerLink js-scroll-link">Awards</a>
             </nav>
-    
+      
             <div class="headerActions">
-                <a href="#" class="headerButton headerButtonOutline">Sign up</a>
-                <a href="#" class="headerButton headerButtonRed">Log in</a>
+              <a href="#subscribe" class="headerButton headerButtonOutline js-scroll-link">Sign up</a>
+              <a href="#subscribe" class="headerButton headerButtonRed js-scroll-link">Log in</a>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
 
     <main>
-        <section class="hero pageSection">
+        <section class="hero pageSection" id="home">
             <div class="container">
                 <div class="heroInner">
                     <div class="heroTop">
@@ -90,7 +100,7 @@
             </div>
         </section>
 
-        <section class="about pageSection">
+        <section class="about pageSection" id="about">
             <div class="container">
         
                 <div class="aboutHeader">
@@ -151,7 +161,7 @@
         </section>
 
 
-        <section class="discography pageSection">
+        <section class="discography pageSection" id="discography">
             <div class="container">
                 <div class="discographyHeader">
                     <div class="discographyCircle"></div>
@@ -196,23 +206,20 @@
             </div>
         </section>
 
-        <section class="idol pageSection">
+        <section class="idol pageSection" id="idol">
             <div class="container">
                 <div class="idolHeader">
-                    <h2 class="idolTitle">
-                        <span class="idolTopRow">
-                            <span class="idolTitleLine">From stage</span>
-                
-                            <span class="idolLabel">
-                                The most controversial and discussed film. The Weeknd's debut as an actor.
-                            </span>
-                        </span>
-                
-                        <span class="idolTitleLine idolTitleLineSecond">
-                            To big screens
-                        </span>
-                    </h2>
-                </div>
+                    <div class="idolTitleBlock">
+                      <h2 class="idolTitle">
+                        <span class="idolTitleLine">From stage</span>
+                        <span class="idolTitleLine idolTitleLineSecond">To big screens</span>
+                      </h2>
+                  
+                      <p class="idolLabel">
+                        The most controversial and discussed film. The Weeknd's debut as an actor.
+                      </p>
+                    </div>
+                  </div>
                 <div class="idolBody">
                     <div class="idolBgText" aria-hidden="true">
                         <div class="idolBgRow">
@@ -303,7 +310,7 @@
             </div>
         </section>
 
-        <section class="awards pageSection">
+        <section class="awards pageSection" id="awards">
             <div class="container">
                 <div class="awardsInner">
                     <div class="awardsSide">
@@ -407,7 +414,7 @@
             </div>
         </section>
 
-        <section class="subscribe pageSection">
+        <section class="subscribe pageSection" id="subscribe">
             <div class="container">
                 <div class="subscribeInner">
         
@@ -561,4 +568,5 @@
     </footer>
 
     <script src="js/discography.js"></script>
+    <script src="js/main.js"></script>
 </body>
