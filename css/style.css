@@ -3381,3 +3381,23 @@ input:focus {
     font-size: 12px;
   }
 }
+@media (max-width: 1280px) {
+  .aboutImageWrapFirst .aboutImage {
+    -o-object-position: center 18%;
+       object-position: center 18%;
+  }
+  .aboutImageWrapSecond .aboutImage {
+    -o-object-position: center 12%;
+       object-position: center 12%;
+  }
+}
+@media (max-width: 480px) {
+  .aboutImageWrapFirst .aboutImage {
+    -o-object-position: center 20%;
+       object-position: center 20%;
+  }
+  .aboutImageWrapSecond .aboutImage {
+    -o-object-position: center 10%;
+       object-position: center 10%;
+  }
+}
